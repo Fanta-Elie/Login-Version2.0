@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Exercice Un</title>
+</head>
+<body>
+	<!--Je creer trois span pour mes encrage que j'utiliserais par la suite-->
+	<span id="s1"></span> 
+	<span id="s2"></span>
+	<span id="s3"></span> 
+	<div id="contenue">
+		<div id="page1">
+			<div class="contenuePage">
+				<!--Ici commence mon formulaire , j'indique dans les liens "a" les encrage correspondant avec "#" devant car ce sont des ID-->
+				<form>
+					<img src="logo.png">
+					<div id="login">
+						<label id="Label1">Veuillez saisir une adresse électronique </label><input id="email" type="email" required placeholder="login...">
+					</div>
+					<div id="password">
+						<label id="Label2">Veuillez saisir un mot de passe </label><input id="mdp" type="password" required pattern=".{4,}" placeholder="password...">
+					</div>
+					<div id="validation">
+						<button onclick="javascript: identification();">Valider</button>
+					</div>
+					<div id="inscription">
+						<label id="Label3">Cliquez ici pour votre : <a href="#s2">Inscription</a></label>
+					</div>
+					<div id="missingPassword">
+						<label id="Label4">Mot de passe perdu ? <a href="#s3">Cliquez ici</a></label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="page2">
+			<div class="contenuePage">
+				<a href="#s1">Page précedente</a>
+				<form>
+					<img src="logo.png">
+						<div id="inscripEmail">
+							<label id="label5">Nom d'utilisateur</label><input id="newUser" type="email" required placeholder="Nouvel e-mail">
+						</div>
+						<div id="inscripPassword">
+							<label id="label6">Mot de Passe</label><input id="newMdp" type="password" required pattern=".{4,}" placeholder="Nouveau mot de passe">
+						</div>
+						<div id="retryInscripPassword">
+							<label id="label7">Retapez le Mot de Passe</label><input id="reNewMdp" type="password" required pattern=".{4,}" placeholder="Confirmez le mot de passe">
+						</div>
+						<button onclick="javascript: inscription();">Valider</button>
+				</form>
+				</div> 	     	
+			</div>
+			<div id="page3">
+				<div class="contenuePage">
+					<div id="PgePrecedente">
+						<a href="#s1">Page précedente</a></div>
+					<form>
+					<img src="logo.png">
+						<div id="missingMdp">
+						<label id="label8">Récupérer votre compte</label><input id="missing" type="email" required placeholder="Adresse e-mail ou telephone">
+					</div>
+					<button id="valid">Valider</button>
+				</form>
+				</div> 	     	
+			</div>
+		</div>	
+		<script type="text/javascript" src="script.js"></script>     	
+	</body>
+	</html>

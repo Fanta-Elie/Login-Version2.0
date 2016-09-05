@@ -1,0 +1,303 @@
+body {
+	background-color: #A55C3F;
+	margin: 0; padding: 0; /* annulation des marges */
+	overflow: hidden; /* on cache le débordement de contenu */
+}
+/*---------- Ici simple personalisation du formulaire( champ du formulaire, police, marge, couleur, logo ect ...) ----------*/
+form {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	background-color: #BF766A;
+	border-color: #BF766A;
+	box-shadow: 8px 8px 8px #813215;
+	margin-left: 25%;
+	margin-top: 10%;
+}
+img {
+	position: absolute;
+	display: flex;
+	margin-top: 1%;
+	margin-left: 82%;
+} 
+#login {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#password{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#inscription{
+	margin-top: 10%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#missingPassword{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#inscripEmail {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#inscripPassword {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#retryInscripPassword {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#missingMdp {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+label {
+	color: #FFC0A8;
+	font-family: helvetica;
+}
+#label1 {
+	font-size: 32px;
+	margin-left: 10%;
+}
+#email {
+	display: flex;
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 32%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 3px solid #E39A8A;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+#email:focus {
+	border: 3px solid #A55C3F;
+}
+#label2 {
+	font-size: 32px;
+	margin-left: 20%;
+}
+#mdp {
+	display: flex;
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 32%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 3px solid #E39A8A;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+#mdp:focus{
+	border: 3px solid #A55C3F;
+}
+/*Ici je donne un éffet d'ombre ainsi que de dégrader à mon bouton , j'indique au dégrader les différentes couleurs qu'il doit contenir*/
+button {
+	display: flex;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 40%;
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+	color: #FFC0A8;
+	-moz-box-shadow: 0px 0px 10px #A55C3F;
+	-webkit-box-shadow: 0px 0px 10px #A55C3F;
+	-o-box-shadow: 0px 0px 10px #A55C3F;
+	box-shadow: 5px 5px 10px #A55C3F;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #813215;
+	background:#A55C3F;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfcfcf", endColorstr="#656565");
+	background: -webkit-gradient(linear, left top, left bottom, from(#A55C3F), to(#813215));
+	background: -webkit-linear-gradient(#A55C3F, #813215);
+	background: -moz-linear-gradient(#A55C3F, #813215);
+	background: -o-linear-gradient(#A55C3F, #813215);
+	background: -ms-linear-gradient(#A55C3F, #813215);
+	background: linear-gradient(#A55C3F, #813215);
+}
+button :active {
+	outline: none;
+}
+#label3{
+	font-size: 32px;
+	margin-left: 2%;
+}
+#label4{
+	font-size: 32px;
+	margin-left: 2%;
+}
+#label5 {
+	font-size: 32px;
+	margin-left: 28%;
+}
+#newUser {
+	display: flex;
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 32%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 3px solid #E39A8A;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+#newUser:focus{
+	border: 3px solid #A55C3F;
+}
+#label6 {
+	font-size: 32px;
+	margin-left: 32%;
+}
+#newMdp {
+	display: flex;
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 32%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 3px solid #E39A8A;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+#newMdp:focus{
+	border: 3px solid #A55C3F;
+}
+#label7 {
+	font-size: 32px;
+	margin-left: 22%;
+}
+#reNewMdp {
+	display: flex;
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 32%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 3px solid #E39A8A;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+#reNewMdp:focus{
+	border: 3px solid #A55C3F;
+}
+#label8 {
+	position: absolute;
+	font-size: 35px;
+	margin-left: 20%;
+	margin-top: 9%;
+}
+#missing {
+	display: flex;
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 32%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 3px solid #E39A8A;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+#missing:focus{
+	border: 3px solid #A55C3F;
+}
+#valid {
+	margin-top: 17%;
+}
+a:link {
+	color: #FFC0A8;
+	text-decoration: none;
+	font-family: helvetica;
+	font-size: 35px;
+}
+a:visited {
+	color: #FFC0A8;
+	text-decoration: none;
+}
+a:hover {
+	color : #813215;
+	text-decoration: none;
+}
+/*---------- Ici ce termine la partie personsalisation du formulaire ----------*/
+
+/*Ici je m'occupe de la partie déplacement des encrages et des éffets de mouvements*/
+#contenue {
+	/* position du conteneur pour le préparer à bouger */
+	position: relative;
+	top: 0;
+	transition: top 1.4s cubic-bezier(.49,.22,.52,1.35); /* on prépare la transition à venir */
+}
+#page1, #page2, #page3{
+	height: 1000px;
+	padding-top: 50px;
+	/* préparation des transitions */
+	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+}
+/* Contenus des pages */
+#page1 .contenuePage {
+	width: 1550px;
+	height: 800px;
+	position: absolute;
+}
+#page2 .contenuePage {
+	width: 1550px;
+	height: 800px;
+	position: absolute;
+}
+#page3 .contenuePage {
+	width: 1550px;
+	height: 800px;
+	position: absolute;
+}
+#PgePrecedente {
+	margin-top: 6%;
+}
+/* décalage du contenue vers le haut*/
+#s2:target ~ #contenue {
+	top:-1000px;
+}
+/* Enfin ici je parammetre tout les encrages d'une page à une autre pour chaque cas possible*/
+#s2 #page1 { 
+	background-position: 50% 36%; 
+}
+#s2: #contenue #page2 { 
+	background-position: 50% 0%; 
+}
+#s1:target ~ #contenue { 
+	top:0px; 
+}
+#s1:target ~ #contenue #page1 { 
+	background-position: 50% 0%; 
+}
+#s1:target ~ #contenue #page2 { 
+	background-position: 50% -35%; 
+}
+#s2: #contenue #page3 { 
+	background-position: 50% -30%; 
+}
+#s1:target ~ #contenue #page3 { 
+	background-position: 50% -60%; 
+}
+#s3:target ~ #contenue { 
+	top:-2150px; 
+}
+#s3:target ~ #contenue #page1 { 
+	background-position: 50% 60%; 
+}
+#s3:target ~ #contenue #page2 { 
+	background-position: 50% 35%; 
+}
+#s3:target ~ #contenue #page3 { 
+	background-position: 50% 0%; 
+}
